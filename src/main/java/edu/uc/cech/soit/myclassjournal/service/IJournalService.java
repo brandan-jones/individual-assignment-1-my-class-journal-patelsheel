@@ -7,17 +7,22 @@ import java.util.List;
 /**
  * Journal Service handles business logic for Journal DTOs.
  */
+
 public interface IJournalService {
 
     /**
      * Save a new Journal Entry
+     *
      * @param journalEntry the entry to save.
+     * @return
      */
-    void save(JournalEntry journalEntry);
+    JournalEntry save(JournalEntry journalEntry) throws Exception;
 
     /**
      * Return all journal entries.
      * @return a collection of all journal entries.
      */
     List<JournalEntry> fetchAll();
+
+
 }
