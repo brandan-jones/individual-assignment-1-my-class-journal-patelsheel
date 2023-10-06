@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal Entry</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-Hello, world!
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Journal Entry Project</a>
+</nav>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Hello, world!</h1>
+            <p>Welcome to my project. This project has the following tasks:</p>
+            <ul>
+                <li>Add an index.html page (or start.html if you wish to map to /start).</li>
+                <li>Create a DTO. Use Lombok annotations instead of creating getter and setter methods.</li>
+                <li>Create a service class. This class should:</li>
+                <ul>
+                    <li>Have an @Service annotation.</li>
+                    <li>Implement an interface that has been provided for you.</li>
+                    <li>When the save method is executed, store the journal entry in a collection of your choice (ArrayList, HashMap, etc.).</li>
+                    <li>When the fetchAll method is executed, return all journal entries.</li>
+                </ul>
+                <li>Add CircleCI to your project. I've provided a yaml file. You won't need to make any changes to this configuration; simply register your repo with CircleCI and ensure all tests pass.</li>
+                <li>Do something extra, something not listed here.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
