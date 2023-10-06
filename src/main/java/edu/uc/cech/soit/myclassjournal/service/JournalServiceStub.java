@@ -1,16 +1,20 @@
-package edu.uc.cech.soit.myclassjournal.dao;
+package edu.uc.cech.soit.myclassjournal.service;
 
 import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class JournalEntryStubDAO implements IJournalEntryDAO {
-
+@Service
+public class JournalServiceStub implements IJournalService{
     List<JournalEntry> allJournalEntries = new ArrayList<JournalEntry>();
+
+
+
     @Override
-    public JournalEntry save(JournalEntry journalEntry) {
-        allJournalEntries.add(journalEntry);
+    public JournalEntry save(JournalEntry journalEntry) throws Exception {
+       allJournalEntries.add(journalEntry);
         return journalEntry;
     }
 
@@ -19,3 +23,4 @@ public class JournalEntryStubDAO implements IJournalEntryDAO {
         return allJournalEntries;
     }
 }
+

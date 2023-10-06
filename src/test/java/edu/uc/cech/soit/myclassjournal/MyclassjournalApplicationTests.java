@@ -1,9 +1,10 @@
 package edu.uc.cech.soit.myclassjournal;
 
-import edu.uc.cech.soit.myclassjournal.dao.IJournalEntryDAO;
+
 import edu.uc.cech.soit.myclassjournal.dto.JournalEntry;
 import edu.uc.cech.soit.myclassjournal.service.IJournalService;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
@@ -15,11 +16,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @SpringBootTest
 class MyclassjournalApplicationTests {
 
-   //@Autowired
+   @Autowired
     IJournalService journalService;
 
-    @MockBean
-    private IJournalEntryDAO journalEntry;
 
     @Test
     void contextLoads() {
